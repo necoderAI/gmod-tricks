@@ -6,10 +6,8 @@
 1. **Insertion and Deletion:** Inserting and deleting elements is also more efficient in hash tables. In an array, you have to shift all the elements after insertion/deletion, which can take O(n) time, while hash tables allow you to perform operations on average in O(1) time.
 ### Really easy example
 ```lua
+    local HashTable = HashTable:NewHashTable()
     local steamid = "STEAM_0:0:712002634" --ply:SteamID()
-    local query = "STEAM_0:0:712002634", "necoder"
-  
-    print(HashTable:hashFunction(steamid))
   
     HashTable:insert(steamid, "necoder")
     print(HashTable:get(steamid))  -- output: "necoder"
@@ -19,6 +17,7 @@
 ```
 ### Registration system (characters system)
 ```lua
+    local HashTable = HashTable:NewHashTable()
     function RegisterUser(username, steamid, registrationDate)
         -- Creating a user record
         local user = {
