@@ -1,5 +1,9 @@
 # Library with various solutions
 ## Hash-Tables
+
+1. **Key Lookup:** Hash tables are usually faster to find an element by key, since they allow you to find an element directly by the key hash, which makes the search operation (on average) constant O(1). While the array search is performed linearly, O(n) if a brute force occurs.
+
+1. **Insertion and Deletion:** Inserting and deleting elements is also more efficient in hash tables. In an array, you have to shift all the elements after insertion/deletion, which can take O(n) time, while hash tables allow you to perform operations on average in O(1) time.
 ### Really easy example
 ```lua
     local steamid = "STEAM_0:0:712002634" --ply:SteamID()
