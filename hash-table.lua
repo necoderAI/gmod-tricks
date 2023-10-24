@@ -178,7 +178,7 @@ HT = HashTable:NewHashTable()
 /*
     EXAMPLE HOW IT USE
 
-    ==================== Really ease example ====================
+    ==================== Really easy example ====================
     local steamid = "STEAM_0:0:712002634" --ply:SteamID()
 
     HT:insert(steamid, "necoder")
